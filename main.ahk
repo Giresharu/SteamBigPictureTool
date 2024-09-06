@@ -15,7 +15,7 @@ A_TrayMenu.Add("编辑配置", (n, p, m) => Run(A_ScriptDir "\config.ini"))
 A_TrayMenu.Add("神奇妙妙工具", ToggleTool)
 A_TrayMenu.Add("使用暗色图标", ChangeTheme)
 A_TrayMenu.Add("刷新配置", (n, p, m) => ReadINI())
-A_TrayMenu.Add("退出", (n, p, m) => ExitApp)
+A_TrayMenu.Add("退出", (n, p, m) => ExitApp())
 
 ;Register WinEvent
 WinEvent.Show(OnBPMWinCreated, title)
